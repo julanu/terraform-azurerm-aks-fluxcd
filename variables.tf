@@ -12,7 +12,6 @@ variable "github_token" {
 
 variable "repository_name" {
   type        = string
-  default     = "gitops-kustomize-infrastructure"
   description = "Github repository name"
 }
 
@@ -24,12 +23,10 @@ variable "repository_visibility" {
 
 variable "branch" {
   type        = string
-  default     = "dev"
   description = "Branch from which to reconcile the components to the cluster"
 }
 
 variable "target_path" {
   type        = string
-  default     = "clusters/my-cluster"
   description = "Flux sync target path"
 }
